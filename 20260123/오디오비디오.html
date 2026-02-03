@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오디오와 비디오</title>
+</head>
+<body>
+    <!-- 오디오
+         autoplay : 오디오/비디오 자동실행
+         loop : 반복 재생
+         muted : 음소거(소리꺼짐)
+         type : mp3 wav ogg 지원 (브라우저마다 다를 수 있음)
+    -->
+    <!-- 비디오 
+         src : 동영상 URL
+         controls : 플레이어 화면에 컨트롤 바를 표시
+         type : mp4 avi mov asf...등 비디오 형식
+         autoplay : 보안상의 이유로 최근 브라우저에서는 작동하지 않음
+         poster : 동영상 재생이 안 될때 대체 이미지
+    -->
+    <audio src="../images/dark-cyberpunk-i-free-background-music-i-free-music-lab-release-469493.mp3"
+    controls loop autoplay muted="muted" type="audio/mp3" id="aud"></audio>
+    <video src="../images/328167_small.mp4" 
+    controls autoplay width="300" type="video/mp4" poster="../images/Bot.avif"></video>
+
+    <video src="../images/328167_small.mp4" 
+    controls autoplay width="300" autoplay controls></video>
+
+    <video controls autoplay  loop>
+        <source src="../images/328167_small.mp4">
+    </video>
+</body>
+</html>

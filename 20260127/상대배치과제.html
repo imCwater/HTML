@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상대배치</title>
+    <style>
+        div{
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border: 1px solid lightgray;
+            text-align: center;
+            color: white;
+            background: red;
+        }
+        .box1:hover{
+            position: relative;
+            left: 20px;
+            top: 20px;
+            background: green;
+        }
+        .box2:hover{
+            position: relative;
+            right: 20px;
+            bottom: 20px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>상대배치, relative</h1>
+    <p>h와 k 글자에 마우스를 올려 보세요</p><hr>
+    <div>T</div>
+    <div class="box1">h</div>
+    <div>a</div>
+    <div>n</div>
+    <div class="box2">k</div>
+    <div>s</div>
+</body>
+</html>

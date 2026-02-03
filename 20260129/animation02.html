@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation02</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        section{
+            
+            background: url(../images/moon-8006703_1280.jpg);
+            height: 900px;
+            width: 100%;
+        }
+        .firPart p{
+            color: azure;
+            font-size: 100px;
+            top: 5%;
+            left: 5%;
+            animation: moveIn 3s
+        }
+        .firPart span{
+            color: azure;
+            font-size: 50px;
+            position: absolute;
+            top: 52px;
+            right: 5%;
+            animation: moveIn 3s alternate infinite ease-in-out;
+        }
+        .secPart{
+            color: blueviolet;
+            font-size: 20px;
+            bottom: 100px;
+            right: 20px;
+        }
+        @keyframes moveIn {
+            from{
+                right: -10%;
+                opacity: 0;
+            }to{
+                right: 30%;
+                opacity: 1;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="firPart">
+        <span> pour un logiciel CRM,</span> <br />
+        <p>
+          simple, complet <br />
+          et intuitif
+        </p>
+      </div>
+      <div class="secPart">
+        <p>
+          zzzzz <br />
+          ZZZZZZZZZ
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

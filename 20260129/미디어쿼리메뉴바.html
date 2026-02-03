@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--폰트어썸 CDN : -->
+
+    <script src="https://kit.fontawesome.com/4ec79785b5.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+            height: 70px;
+            align-items: center;
+            padding-top: 15px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        li{
+            padding: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: mediumvioletred;
+            font-weight: 800;
+        }
+        .appo{
+            padding: 0 5px;
+        }
+        a:hover{
+            color: blueviolet;
+        }
+        .appo:hover{
+            background-color: blue;
+            cursor: pointer;
+            color: aquamarine;
+            border-radius: 7px;
+        }
+        /* 브라우저 가로가 768이하일 때 */
+        @media screen and (max-width : 768px){
+            nav{
+                height: 280px;
+                align-items: flex-start;
+            }
+            ul{
+                flex-direction: column;
+            }
+            .navbar ul li{
+                line-height: 2;
+            }
+            .fa-circle-user, .appo{
+                /* visibility: hidden; */ /* 눈에 안보이고 자리차지함 */
+                display: none; /* 자리 자체 차지하지 않음 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1> &nbsp; &#91; <i class="fa-solid fa-bars"></i> LOGO &#93; &nbsp; </h1>
+            <!-- 엔티티 코드 -->
+        </div>
+        <div>
+            <ul class="navbar">
+                <!--  main추가해서?
+                 메뉴를 누르면 다른 페이지로 가게 하고 싶으면, 이 HTML 파일을 save as복사해서 다른 이름(영문)으로 저장한 뒤 그 파일 이름을 a 태그의 href에 넣으면 됨
+                 #은 임시 링크. 실제 페이지 이동하려면 html 파일명을 href에 작성-->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+                <li class="appo">Appointment</li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

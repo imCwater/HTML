@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>표만들기</title>
+  </head>
+  <body>
+    <!-- 
+        table 표 전체를 담는 컨테이너
+        caption 표의 제목
+        thead 헤딩 셀 그룹
+        tbody 데이터 셀 그룹
+        tfoot 바닥 셀 그룹
+        tr 행, 여러 개의 td, th 포함
+        th 제목(헤딩) 셀 : 두꺼운 글꼴
+        td 데이터 셀(칸)
+    -->
+    <!-- tr : 줄 -->
+    <!-- td : 칸 -->
+    <!-- table row 줄(행)을 정의 <td><>th>포함해야만 사용가능-->
+    <table border="1">
+      <caption>
+        색깔의 종류
+      </caption>
+      <thead>
+        <tr>
+          <th>종류</th>
+          <th colspan="2" style="background-color: yellowgreen">밝은 계열</th>
+          <th>어두운 계열</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>빨강</td>
+          <td>분홍색</td>
+          <td>검정</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>파랑</td>
+          <td rowspan="2" style="background-color: lightblue">하늘색</td>
+          <td>남색</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>노랑</td>
+          <td>회색</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>합계</td>
+          <td>3개</td>
+          <td>3개</td>
+          <td>3개</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h1>표에 이미지 삽입</h1>
+    <table border="1">
+      <caption>
+        좋아하는 과일
+      </caption>
+      <tr>
+        <td>
+          내용1
+          <img
+            src="https://imagescdn.gettyimagesbank.com/500/201811/a11228497.jpg"
+            width="30px"
+          />
+        </td>
+        <td>
+          내용2
+          <img
+            src="https://png.pngtree.com/png-clipart/20210912/original/pngtree-fruit-pear-png-image_6721875.jpg"
+            width="30px"
+          />
+        </td>
+        <td>
+          내용3
+          <img
+            src="https://png.pngtree.com/element_our/20190603/ourlarge/pngtree-delicious-peach-fruit-illustration-image_1452665.jpg"
+            width="30px"
+          />
+        </td>
+      </tr>
+    </table>
+
+    
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #f2f2f2;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #ex {
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; /* ⭐ 카드 아래 고정 */
+        gap: 30px;
+      }
+
+      #ex small {
+        font-size: 20px;
+      }
+
+      /* 카드 */
+      #ex div {
+        width: 300px;
+        height: 400px;
+        background: white;
+        border-radius: 5px;
+        font-size: 35px;
+        padding: 20px;
+        box-sizing: border-box;
+
+        display: flex; /* ⭐ 중요 */
+        flex-direction: column; /* ⭐ 세로 정렬 */
+
+        transition:
+          height 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+
+      /* ⭐ 위로만 늘어남 */
+      #ex div:hover {
+        height: 420px;
+        box-shadow: 0 10px 30px lightgray;
+      }
+
+      /* ⭐ 이미지 아래 고정 */
+      #ex img {
+        width: 150px;
+        margin-top: auto; /* 핵심 */
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>한국금융주택공사페이지</h2>
+    <h1>
+      <span style="color: navy"
+        >국민과 함께 성장하는 <b>글로벌 주택금융 리더</b></span
+      >
+    </h1>
+    <br />
+    <div id="ex">
+      <div class="ease1">
+        아낌e-보금자리론<br />
+        <small
+          ><span style="color: rgb(167, 167, 167)"
+            >0.1%p더 저렴한 금리</span
+          ></small
+        ><br />
+        <span style="color: rgb(54, 54, 245)"
+          ><small>최대</small><br />주택가격<strong>6</strong>억원</span
+        >
+        <img src="../images/hf1.png" alt="" />
+      </div>
+      <div class="ease2">
+        u-보금자리론<br />
+        <small
+          ><span style="color: rgb(167, 167, 167)"
+            >우리 가족의 소중한 보금자리 마련</span
+          ></small
+        ><br />
+        <span style="color: rgb(54, 54, 245)"
+          ><small>최대</small><br />대출한도<strong>3.6</strong>억원</span
+        >
+        <img src="../images/hf2.png" alt="" />
+      </div>
+      <div class="ease3">
+        내집마련 디딤돌<br />
+        <small
+          ><span style="color: rgb(167, 167, 167)"
+            >내 집 마련 꿈의 실현</span
+          ></small
+        ><br />
+        <span style="color: rgb(54, 54, 245)"
+          ><small>무주택 세대주 대상</small><br />저금리<br />주택구립자금</span
+        >
+        <img src="../images/hf3.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

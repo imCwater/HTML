@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    /* 
+        body {
+        margin: 0;
+      }
+
+      .grid0 {
+        display: grid;
+        gap: 20px;
+
+        max-width: 1200px; <-- 핵심 -->
+        margin: 50px auto; <-- 가운데 -->
+
+        grid-template-areas:
+          "g1 g1 g2"
+          "g3 g4 g2"
+          "g5 g4 g6"
+          "g5 g7 g7";
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    */
+      body {
+        margin: 0;
+      }
+      .grid0 {
+        margin: 5%;
+        max-width: 300px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1ft));
+        gap: 20px;
+        /* 컬럼 최소 너비만큼 채워서 표시 */
+        grid-template-areas: /* 각 클래스에 grid-area 번호 설정 */
+          "g1 g1 g2"
+          "g3 g4 g2"
+          "g5 g4 g6"
+          "g5 g7 g7";
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* display: block; */
+
+        padding: 1px;
+        box-sizing: border-box; /* */
+      }
+
+      .g1 {
+        grid-area: g1;
+      }
+      .g2 {
+        grid-area: g2;
+      }
+      .g3 {
+        grid-area: g3;
+      }
+      .g4 {
+        grid-area: g4;
+      }
+      .g5 {
+        grid-area: g5;
+      }
+      .g6 {
+        grid-area: g6;
+      }
+      .g7 {
+        grid-area: g7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid0">
+      <img
+        class="g1"
+        src="https://images.squarespace-cdn.com/content/v1/54588808e4b0d75692c47323/9b044ca6-a32f-456e-8b7c-8c5249c4a278/chanel-f24.jpg?format=750w"
+        alt=""
+      />
+      <img
+        class="g2"
+        src="https://images.squarespace-cdn.com/content/v1/54588808e4b0d75692c47323/406a2c83-8ba2-4bc9-b1c3-f9b30dbab21f/coperni-f24.jpg?format=750w"
+        alt=""
+      />
+      <img
+        class="g3"
+        src="https://images.squarespace-cdn.com/content/v1/54588808e4b0d75692c47323/894e5763-b6db-4b42-a831-2df4f11b447c/mcqueen-po-s25.jpg?format=750w"
+        alt=""
+      />
+      <img
+        class="g4"
+        src="https://images.squarespace-cdn.com/content/v1/54588808e4b0d75692c47323/46832503-c1d5-4282-874a-54fbf0dc6b02/mugler-f24.jpg?format=750w"
+        alt=""
+      />
+      <img
+        class="g5"
+        src="https://images.squarespace-cdn.com/content/v1/54588808e4b0d75692c47323/49847cb1-cbfe-4ded-8ef6-a8d62df1c136/vuitton-s25.jpg?format=750w"
+        alt=""
+      />
+      <img
+        class="g6"
+        src="https://images.squarespace-cdn.com/content/v1/54588808e4b0d75692c47323/a75b64d2-d2e3-45df-9234-b4d63afecc39/miu-miu-s25_1.jpg?format=750w"
+        alt=""
+      />
+      <img
+        class="g7"
+        src="https://images.squarespace-cdn.com/content/v1/54588808e4b0d75692c47323/4759b912-1ca7-4e11-93f8-78413fc88f4e/sacai-s25.jpg?format=750w"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

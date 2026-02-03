@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>블록요소예제</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+      body,
+      pre {
+        font-family: "Jua", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+      }
+
+      .container {
+        border: 1px solid red;
+        width: 600px;
+        background-color: beige;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      /* p:first-letter{color: red;} 문단의 앞글자만 색을 바꿀수 있음 */
+      span {
+        color: blue;
+      }
+      .title {
+        background-color: pink;
+      }
+      .snow {
+        background-color: yellowgreen;
+      }
+      a {
+        text-decoration: none;
+        color: green;
+      }
+      a:hover {
+        background-color: yellowgreen;
+      }
+
+      .title1 {
+        background-color: rgb(179, 255, 0);
+      }
+      .time {
+        background-color: yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">[날씨] 내일 아침 쌀쌀,</h2>
+      <p class="sum">한낮 포근... 내룩 짙은 안개</p>
+      <p>
+        오늘 23(금) - 강추위 이어지고 <span>일부 지역 눈</span> 토~일 - 춥고
+        대체로 맑지만, <span class="snow">일부 지역 흐려</span>
+      </p>
+      <a href="#">링크가 있는 내용</a>
+    </div>
+    <br /><br />
+
+    <img
+      width="700"
+      src="https://cdn.nongupin.co.kr/news/photo/202204/95676_54476_1723.jpg"
+      alt="과일 이미지"
+    />
+    <h2><span class="title1">주문 및 배송</span></h2>
+    <p>
+      <span>오전 2시 이전</span> 주문은 당일 발송 2시 이후 주문건은 다음날 발송
+    </p>
+    <br />
+    <h2><span class="title1">고객센터</span></h2>
+    <p>0000-0000</p>
+    <pre class="time">
+        상담시간 : 오전 9시 ~ 오후 6시(토/일, 공휴일 휴무)
+    </pre>
+  </body>
+</html>

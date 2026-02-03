@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <h1>회원가입</h1>
+      <fieldset>
+        <label for="birth">생년월일</label><br />
+        <input
+          type="text"
+          placeholder="년(4자)"
+          size="5"
+          maxlength="4"
+          autocomplete="off"
+        />
+        <label for="path">월</label>
+        <select name="" id="path">
+          <option value="">1월</option>
+          <option value="">2월</option>
+          <option value="">3월</option>
+          <option value="">4월</option>
+          <option value="">5월</option>
+          <option value="">6월</option>
+          <option value="">7월</option>
+          <option value="">8월</option>
+          <option value="">9월</option>
+          <option value="">10월</option>
+          <option value="">11월</option>
+          <option value="">12월</option>
+        </select>
+        <input
+          type="text"
+          placeholder="일"
+          size="5"
+          maxlength="3"
+          autocomplete="off"
+        />
+        <br /><br />
+        <label for="male"
+          >성별 <input type="radio" id="male" name="gender" value="s_1" /> 남성
+        </label>
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="s_2" /> 여성
+        </label>
+        <label for="none">
+          <input type="radio" id="female" name="gender" value="s_3" /> 선택안함
+        </label><br><br>
+        
+        <label for="email">이메일(선택)</label><br>
+        <input type="mail" placeholder="example@email.com"><br>
+
+      </fieldset>
+    </form>
+  </body>
+</html>

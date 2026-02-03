@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            width: 500px;
+        }
+        ul{
+            display: flex;
+            width: 3000px;
+            height: 350px;
+            animation: slideAni 8s infinite ease-in-out;
+        }
+        li{
+            width: 1000px;
+            height: 300px;
+        }
+        li:nth-child(1){
+            background: url(../images/해파리.jpg);
+            background-size: cover;
+        }
+        li:nth-child(2){
+            background: url(../images/백조.jpg);
+            background-size: cover;
+        }
+        li:nth-child(3){
+            background: url(../images/말.jpg);
+            background-size: cover;
+        }
+        li:nth-child(4){
+            background: url(../images/호랑이.jpg);
+            background-size: cover;
+        }
+        @keyframes slideAni {
+            0% { transform: translate(0); }
+            25% { transform: translateX(-500px); }
+            50% { transform: translate(-1000px); }
+            75% { transform: translate(-1500px); }
+            100% { transform: translate(0); }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 와일드 카드 문자 *: 전체 선택 */
+      * {
+        margin: 0;
+        scroll-behavior: smooth;
+      }
+      /* wrap을 container로 이름 바꿈 */
+      .container {
+        width: 100%;
+        height: 100vh; /*보이는 범위만큼*/
+        margin: 0 auto;
+      }
+      h3 {
+        font-size: 70px;
+        font-weight: 800; /*글자의 두께*/
+        line-height: 700px; /*줄간격*/
+        text-align: center;
+        color: aliceblue;
+      }
+      .section1 {
+        height: 700px;
+        background: url(../images/123.jfif) no-repeat 50% 0 / cover fixed;
+        /* background-size: cover; */
+        width: 100%;
+        height: 100vh;
+      }
+      .section2 {
+        background: linear-gradient(to right bottom, rgba(34,34,34,0.7)),
+        url(../images/night.jpg) no-repeat 50% 0 scroll;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+      .section3 {
+        height: 700px;
+        background: url(../images/IMG_1067.jpg) no-repeat 50% 0 fixed;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+      .section4 {
+        height: 700px;
+        background: url(../images/Melbourne_Australia.jpg) no-repeat 50% 0;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+      /* nav */
+      nav {
+        height: 70px;
+        /* border: solid red; */
+        text-align: center;
+        padding-top: 20px; /*🟠*/
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        display: inline-block; /*🟠추가한 부분, padding없다*/
+        border: solid 2px black;
+        margin: 5px 15px;
+        width: 200px;
+      }
+      li:hover {
+        background-color: black;
+        color: whitesmoke;
+      }
+      li a {
+        display: block; /*🟠추가한 부분! 호버시 불편해소*/
+        /* padding: 0 25px; */
+        text-decoration: none; /*a태그 기본 꾸미기 속성을 없애줌*/
+        color: black;
+        font-size: 20px;
+        padding: 5px 15px; /*🟠*/
+      }
+      a:hover {
+        color: whitesmoke;
+        border: 1px solid red;
+      }
+      .top {
+        border: solid red;
+      }
+
+      /* 그리드 이미지 영역 */
+      #wrapper {
+        width: 1200px;
+        height: 100vh;
+        /* border: 1px solid red; */
+        display: grid;
+        /*grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));*/
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 300px 1fr;
+        grid-gap: 1rem 1rem;
+        background-color: transparent;
+        margin: 0 auto;
+        
+      }
+      h4 {
+        font-size: 18px;
+      }
+      .card {
+        border: solid 1px lightgrey;
+        color: aliceblue;
+      }
+
+      .card header,
+      p {
+        margin-left: 25px;
+        /*border: solid 1px red;*/
+      }
+
+      .card img {
+        height: 200px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 🟠 백그라운드스크롤2에 
+     그리드 이미지 추가한 페이지 -->
+    <div class="container">
+      <section class="section1" id="section1">
+        <nav>
+          <ul>
+            <li><a href="#section2">그리드 이미지</a></li>
+            <li><a href="#section3">버튼123</a></li>
+            <li><a href="#section4">버튼123</a></li>
+          </ul>
+        </nav>
+        <h3>WEB FRONTEND</h3>
+      </section>
+
+      <!-- 섹션 2 : 🟠 grid 이미지 영역 -->
+      <section class="section2" id="section2">
+        <!-- <h3>WEB FRONTEND</h3> -->
+        <div id="wrapper">
+          <div class="card">
+            <header>
+              <h4>Lorem ipsum dolor</h4>
+            </header>
+            <figure><img src="../images/들판.jpg" alt="" /></figure>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              reprehenderit
+            </p>
+          </div>
+          <div class="card">
+            <header>
+              <h4>Lorem ipsum dolor</h4>
+            </header>
+            <figure><img src="../images/바다.jpg" alt="" /></figure>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              reprehenderit
+            </p>
+          </div>
+          <div class="card">
+            <header>
+              <h4>Lorem ipsum dolor</h4>
+            </header>
+            <figure><img src="../images/산.jpg" alt="" /></figure>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              reprehenderit
+            </p>
+          </div>
+          <div class="card">
+            <header>
+              <h4>Lorem ipsum dolor</h4>
+            </header>
+            <figure><img src="../images/눈.avif" alt="" /></figure>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              reprehenderit
+            </p>
+          </div>
+          <div class="card">
+            <header>
+              <h4>Lorem ipsum dolor</h4>
+            </header>
+            <figure><img src="../images/ceramic05.jpg" alt="" /></figure>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              reprehenderit
+            </p>
+          </div>
+          <div class="card">
+            <header>
+              <h4>Lorem ipsum dolor</h4>
+            </header>
+            <figure><img src="../images/ceramic01.jpg" alt="" /></figure>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+              reprehenderit
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section3" id="section3">
+        <h3>WEB FRONTEND</h3>
+      </section>
+
+      <section class="section4" id="section4">
+        <h3>WEB FRONTEND</h3>
+        <a href="#" class="top">맨 위로</a>
+      </section>
+    </div>
+  </body>

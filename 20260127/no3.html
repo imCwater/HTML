@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            border: solid gray;
+            display: flex;
+            justify-content: center;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            position: relative;
+            /*display: flex;  정중앙배치3줄 
+            justify-content: center;  좌우 관계 정렬 
+            align-items: center; 상하 관계 정렬*/
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: olivedrab;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+</body>
+</html>

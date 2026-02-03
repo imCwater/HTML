@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+            width: 4000px;
+            height: 350px;
+            animation: slideAni 8s infinite ease-in-out;
+        }
+        li{
+            width: 1000px;
+            height: 1000px;
+        }
+        /* 일괄 수정 방법 : (먼저 필요한 부분을 드래그한 후) ctrl+shift+L */
+        /* 
+        깃허브에 올릴 때 경로 설정
+        /images/파일이름.jpg // 안 되고 (live server에는 나옴)
+        ./images/파일이름.jpg 를 붙여야 함 
+        ../images/파일이름.jpg 
+        ../상위폴더   ./현재 위치/하위폴더 
+        */
+        li:nth-child(1){
+            background: url(../images/food_ham_katsu_atsui.png);
+            background-size: cover;
+        }
+        li:nth-child(2){
+            background: url(../images/food_nabe_mizutaki.png);
+            background-size: cover;
+        }
+        li:nth-child(3){
+            background: url(../images/ramen_chashu.png);
+            background-size: cover;
+        }
+        li:nth-child(4){
+            background: url(../images/sushi_oke_nigiri.png);
+            background-size: cover;
+        }
+        @keyframes slideAni {
+            0% { transform: translate(0); }
+            25% { transform: translateX(-1000px); }
+            50% { transform: translate(-2000px); }
+            75% { transform: translate(-3000px); }
+            100% { transform: translate(0); }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+</body>
+</html>

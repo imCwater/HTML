@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스타벅스과제</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .starb {
+        height: 100vh;
+        background: url(../images/스타벅스배경.jpg) no-repeat center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content {
+        width: 80%;
+        max-width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .coffee {
+        width: 500px;
+        animation: cLeft 1s ease;
+      }
+      .text {
+        color: white;
+        max-width: 400px;
+        animation: tRight 1s ease forwards;
+        animation-delay: 0.2s;
+        opacity: 0;
+      }
+      .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 30px;
+        border: 2px solid white;
+        border-radius: 5px;
+        color: white;
+
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      .btn:hover{
+        background-color: white;
+        color: red;
+        text-decoration: underline;
+        
+      }
+      @media screen and (max-width:768px){
+        body{
+            background-position: center top;
+        }
+      }
+      @keyframes cLeft {
+        from {
+          transform: translateX(-150px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes tRight {
+        from {
+          transform: translateX(150px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="starb">
+      <div class="content">
+        <img class="coffee" src="../images/스타벅스-Photoroom.png" alt="" />
+        <div class="text">
+          <p>NOTES OF JUJUBE & VIBRANT HERBS</p>
+          <h2>루나 뉴이어 블렌드</h2>
+          <p>
+            대추와 허브의 깊은 풍미에 달콤한 시럽 피니시, 풍부한 바디감으로<br>
+            설날의 따뜻함을 담은 시즌 한정 원두입니다.
+          </p>
+          <a href="#" class="btn">자세히 보기</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

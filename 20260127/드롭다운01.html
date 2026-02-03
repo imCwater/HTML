@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>드롭다운</title>
+    <style>
+      .menu {
+        display: flex;
+      }
+      .dropbtn1 {
+        background-color: aliceblue;
+        width: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+      }
+      .dropdown-content1 {
+        display: none; /* 처음에는 안 보이게 */
+      }
+      /* 바깥쪽에 올리면 안 쪽 내용이 보임 */
+      .dropbtn1:hover .dropdown-content1 {
+        display: block; /* 보이게 */
+      }
+      .dropdown-content1 li a {
+        text-decoration: none;
+        color: gray;
+      }
+      .dropdown-content1 li a:hover {
+        color: rgb(253, 56, 56);
+      }
+
+      .dropbtn2 {
+        background-color: aliceblue;
+        width: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+      }
+      .dropdown-content2 {
+        display: none; /* 처음에는 안 보이게 */
+      }
+      /* 바깥쪽에 올리면 안 쪽 내용이 보임 */
+      .dropbtn2:hover .dropdown-content2 {
+        display: block; /* 보이게 */
+      }
+      .dropdown-content2 li a {
+        text-decoration: none;
+        color: gray;
+      }
+      .dropdown-content2 li a:hover {
+        color: rgb(253, 56, 56);
+      }
+
+      .dropbtn3 {
+        background-color: aliceblue;
+        width: 200px;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      ul {
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+      }
+      .dropdown-content3 {
+        display: none; /* 처음에는 안 보이게 */
+      }
+      /* 바깥쪽에 올리면 안 쪽 내용이 보임 */
+      .dropbtn3:hover .dropdown-content3 {
+        display: block; /* 보이게 */
+      }
+      .dropdown-content3 li a {
+        text-decoration: none;
+        color: gray;
+      }
+      .dropdown-content3 li a:hover {
+        color: rgb(253, 56, 56);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <ul class="dropbtn1">
+        드롭다운1
+        <div class="dropdown-content1">
+          <li><a href="#">서브메뉴1</a></li>
+          <li><a href="#">서브메뉴2</a></li>
+          <li><a href="#">서브메뉴3</a></li>
+        </div>
+      </ul>
+      <ul class="dropbtn2">
+        드롭다운2
+        <div class="dropdown-content2">
+          <li><a href="#">서브메뉴1</a></li>
+          <li><a href="#">서브메뉴2</a></li>
+          <li><a href="#">서브메뉴3</a></li>
+        </div>
+      </ul>
+      <ul class="dropbtn3">
+        드롭다운3
+        <div class="dropdown-content3">
+          <li><a href="#">서브메뉴1</a></li>
+          <li><a href="#">서브메뉴2</a></li>
+          <li><a href="#">서브메뉴3</a></li>
+        </div>
+      </ul>
+    </div>
+  </body>
+</html>

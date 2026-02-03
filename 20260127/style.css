@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 헤더부분 시작 */
+header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 600px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav a{
+    padding: 15px;
+}
+a:hover{
+    color: rgb(70, 158, 158);
+    background-color: rgb(243, 238, 233);
+}
+.logo{
+    margin-left: 30px;
+}
+.logo img{
+    width: 60px;
+}
+/* 메인부분 시작 */
+main{
+    background-image: url(../images/커피.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-bottom: 30px;
+}
+.ment1{
+    position: relative;
+    top: 300px;
+    left: 45px;
+    font-size: 1em;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ment2{
+    position: relative;
+    top: 295px;
+    left: 45px;
+    font-size: 3em;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    position: relative;
+    top: 300px;
+    left: 45px;
+    background-color: aquamarine;
+    border: 0;
+    padding: 5px 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* 푸터 부분 시작 */
+footer{
+    color: gray;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    padding: 10px 50px;
+}
+footer a img{
+    width: 20px;
+}
+.fa-brands{
+    font-size: 30px;
+}
+.footer-menu{
+    display: flex;
+    
+}
+.footer-column{
+    margin-bottom: 16px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-column a{
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.footer-column a:hover{
+    color: white;
+}
