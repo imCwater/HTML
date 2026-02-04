@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>포트폴리오</title>
+    <!--폰트어썸 CDN : -->
+
+    <script
+      src="https://kit.fontawesome.com/4ec79785b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <!-- 마우스 파티클 -->
+  <canvas id="particleCanvas"></canvas>
+  <!-- 메뉴바 -->
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-left">
+          <button class="back-btn">←</button>
+          <h1 class="logo">NAHAESU</h1>
+        </div>
+
+        <ul class="menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <button class="hamburger">☰</button>
+      </nav>
+    </header>
+
+    <!-- 시작화면 HOME -->
+    <section class="start" id="home">
+      <div class="title">
+        <div class="top_left">NAHAESU</div>
+        <div class="bottom_right">PORTFOLIO</div>
+      </div>
+    </section>
+
+    <!-- 자기소개 ABOUT -->
+    <section class="about" id="about">
+      <div class="about-box">
+        <h2>ABOUT ME</h2>
+        <p class="intro">
+          안녕하세요.<br />프론트엔드 개발자를 꿈꾸는 나해수 입니다.
+        </p>
+
+        <ul class="info">
+          <li><strong>Age</strong> 24살</li>
+          <li><strong>Skill</strong> HTML / CSS / JavaScript</li>
+          <li><strong>Email</strong> example@email.com</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 포트폴리오 PROJECT -->
+    <section class="project" id="project">
+      <h2>PROJECT</h2>
+      <div class="card-wrap">
+        <div
+          class="card"
+          data-prev="#project"
+          onclick="
+            window.open(
+              'http://127.0.0.1:5500/20260130/MobileFirst/index.html',
+            );
+            showBack('#project');
+          "
+        >
+          <h3>MobileFirst</h3>
+          <p>여기에 만든 프로젝트 카드 넣기</p>
+        </div>
+        <div
+          class="card"
+          data-prev="#project"
+          onclick="
+            window.open(
+              'http://127.0.0.1:5500/20260128/%ED%95%9C%EA%B5%AD%EA%B8%88%EC%9C%B5%EC%A3%BC%ED%83%9D%EA%B3%B5%EC%82%AC%ED%8E%98%EC%9D%B4%EC%A7%80%EA%B3%BC%EC%A0%9C.html',
+            );
+            showBack('#project');
+          "
+        >
+          <h3>한국주택금융공사(HF)</h3>
+          <p>여기에 만든 프로젝트 카드 넣기</p>
+        </div>
+        <div
+          class="card"
+          data-prev="#project"
+          onclick="
+            window.open('https://github.com/imCwater');
+            showBack('#project');
+          "
+        >
+          <h3>33333</h3>
+          <p>여기에 만든 프로젝트 카드 넣기</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 마지막 CONTACT -->
+    <section id="contact" class="contact">
+      <h2 class="contact-title">CONTACT</h2>
+
+      <div class="contact-wrapper">
+        <!-- 박스 -->
+        <div class="contact-box">
+          <a href="mailto:example@email.com" class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>example@email.com</span>
+          </a>
+
+          <a
+            href="https://github.com/imCwater"
+            target="_blank"
+            class="contact-item"
+          >
+            <i class="fa-brands fa-github"></i>
+            <span>github.com/imCwater</span>
+          </a>
+
+          <!-- 블로그는 이미지 -->
+          <a href="https://blog.naver.com/imcwater" target="_blank" class="contact-item">
+            <img src="../images/블로그로고.png" class="blog-icon" />
+            <span>blog.naver.com/imcwater</span>
+          </a>
+        </div>
+
+        <!--음표 -->
+        <img src="../images/music note.png" class="floating-note" />
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
