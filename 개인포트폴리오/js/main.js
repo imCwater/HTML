@@ -7,9 +7,6 @@ const menu = document.querySelector(".menu");
 // 메뉴 active 처리
 const links = document.querySelectorAll(".menu a");
 
-// 뒤로 가기 버튼
-const backBtn = document.querySelector(".back-btn");
-
 const cards = document.querySelectorAll(".card");
 const project = document.querySelector(".project");
 
@@ -46,25 +43,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-let previousSection = null;
-
-// 카드 클릭 시 호출
-function showBack(sectionId) {
-  previousSection = sectionId;
-  backBtn.style.display = "block";
-}
-
-// 뒤로가기
-backBtn.addEventListener("click", () => {
-  if (!previousSection) return;
-
-  document.querySelector(previousSection).scrollIntoView({
-    behavior: "smooth"
-  });
-
-  backBtn.style.display = "none";
-});
-
 // 파티클 효과
 
 const canvas = document.getElementById("particleCanvas");
@@ -92,7 +70,7 @@ window.addEventListener("mousemove", (e) => {
       size: Math.random() * 4 + 1,
       alpha: 1,
       vx: (Math.random() - 0.5) * 2,
-      vy: (Math.random() - 0.5) * 2
+      vy: (Math.random() - 0.5) * 2,
     });
   }
 });
